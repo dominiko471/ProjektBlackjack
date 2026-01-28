@@ -2,7 +2,7 @@
 
 namespace ProjektBlackjack
 {
-    // TO JEST TWOJA KLASA ABSTRAKCYJNA
+ 
     public abstract class Uczestnik
     {
         // Właściwość jest dziedziczona
@@ -23,8 +23,8 @@ namespace ProjektBlackjack
             Karty.Clear();
         }
 
-        // Metoda wirtualna - logika liczenia jest ta sama dla wszystkich,
-        // ale pozwalamy na nadpisanie jej w przyszłości (dlatego virtual)
+        //logika liczenia, taka sama dla krupiera i gracza
+        
         public virtual int ObliczPunkty()
         {
             int suma = 0;
@@ -45,8 +45,7 @@ namespace ProjektBlackjack
             return suma;
         }
 
-        // Metoda abstrakcyjna - wymuszamy na klasach pochodnych,
-        // aby zdefiniowały, jak chcą się pokazać.
+        //wymuszamy na klasach pochodnych, aby zdefiniowały, jak chcą się pokazać.
         public abstract void PokazKarty(string wlasciciel, bool ukryjPierwsza = false);
     }
 }

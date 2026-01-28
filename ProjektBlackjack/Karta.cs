@@ -20,11 +20,9 @@
             int numer = (int)FiguraKarty;
 
             // Dopiero teraz sprawdzamy figury.
-            // Walet (11), Dama (12), Król (13) mają wartość 10.
-            // Ponieważ As (14) został obsłużony wyżej, ten warunek go nie "złapie".
+            // Walet, Dama, Król mają wartość 10.
             if (numer > 10) return 10;
 
-            // Dla kart 2-10 zwracamy ich wartość nominalną
             return numer;
         }
 

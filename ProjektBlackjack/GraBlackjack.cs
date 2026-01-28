@@ -65,7 +65,7 @@ namespace ProjektBlackjack
             gracz.DodajKarte(talia.DobierzKarte());
             krupier.DodajKarte(talia.DobierzKarte());
 
-            // Wyświetlenie stanu (Krupier ma jedną zakrytą)
+            // Wyświetlenie stanu
             krupier.PokazKarty("Krupier", ukryjPierwsza: true);
             gracz.PokazKarty("Gracz");
 
@@ -112,7 +112,7 @@ namespace ProjektBlackjack
             while (krupier.ObliczPunkty() < 17)
             {
                 Console.WriteLine("Krupier dobiera...");
-                System.Threading.Thread.Sleep(1000); // Małe opóźnienie dla efektu
+                System.Threading.Thread.Sleep(1000);
                 krupier.DodajKarte(talia.DobierzKarte());
                 krupier.PokazKarty("Krupier");
             }

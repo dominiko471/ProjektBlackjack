@@ -2,14 +2,14 @@
 
 namespace ProjektBlackjack
 {
-    // Reka dziedziczy po klasie abstrakcyjnej Uczestnik
+    //reka dziedziczy po abstract uczestnik
     public class Reka : Uczestnik
     {
-        public Reka() : base() // Wywołanie konstruktora bazowego (inicjalizacja listy)
+        public Reka() : base() // Wywołanie
         {
         }
 
-        // Nadpisujemy metodę abstrakcyjną (obowiązkowe!)
+        // Nadpisujemy metodę abstrakcyjną
         public override void PokazKarty(string wlasciciel, bool ukryjPierwsza = false)
         {
             Console.WriteLine($"--- Ręka: {wlasciciel} ---");
